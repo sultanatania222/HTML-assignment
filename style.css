@@ -1,6 +1,7 @@
-﻿*{
+﻿
+*{
 box-sizing: border-box;
-font- family: arial sans-serif;
+font-family: arial sans-serif;
 }
 body{
     background-color: #f2f2f2;
@@ -10,7 +11,7 @@ body{
 }
 
 header,footer{
-    back-ground: #333;
+    background: #333;
     color: white;
     text-align: center;
     padding:15px;
@@ -45,3 +46,4 @@ button{
 button:hover{
     background-color:darkblue;
 }
+ 

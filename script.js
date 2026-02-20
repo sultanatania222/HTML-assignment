@@ -1,28 +1,26 @@
-﻿const addBtn = document.getElementById("addBtin");
+﻿
+
+const addBtn = document.getElementById("addBtn");
 const list = document.getElementById("expenselist");
-const totaltext = document.getElementById("total");
-let total = Number(localstrorage.getitem("total")) || 0;
-totaltext.innertext = "Total:$" total;
+const totalText = document.getElementById("total");
+let total = 0;
+
 addBtn.addEventListener("click", function () {
 
-const name = document.getElementByid("expense name").value;
-
-    const amount = Number.getElementByid("expense amount").value;
-    if (name === "|| amount ===0){
+const name = document.getElementById("expenseName").value;
+const amount = Number(document.getElementById("expenseAmount").value);
+    if (name === ""|| amount ===0){
         alert("plase enter expensse name and account");
     return;
 }
 const li = document.createElement("li");
 
-li.inner Text = name + "-$ " + amount;
-list.appendchild(li);
+li.innerText = name + "-$ " + amount;
+list.appendChild(li);
 total += amount;
 totalText.innerText = "Total:$" + total;
-localstorage.setItem = ("total", total);
-document.getElementById("expenseName").value = "";
-document.getElementById("expenseAmount").value = "";
-});
 
+});
 
 
 
